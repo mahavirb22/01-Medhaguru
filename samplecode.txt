@@ -1,0 +1,12 @@
+ALTER TABLE edus_users_profile
+ADD CONSTRAINT fk_user
+FOREIGN KEY (user_id)
+REFERENCES edus_users(user_id)
+ON DELETE CASCADE;
+
+
+ALTER TABLE edus_users_profile
+DROP FOREIGN KEY fk_user;
+
+MySQL DB Name	        MySQL User Name	          MySQL Password		PHPMyAdmin
+if0_38738910_edus	    if0_38738910	          YV1wrMso7H7Qf2   	    sql101.infinityfree.com
